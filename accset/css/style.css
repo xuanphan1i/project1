@@ -1,0 +1,13 @@
+*{
+   box-sizing: border-box; 
+}
+
+html{
+    font-size: 52.6%;
+    /* dat font nay de doi kich
+     thuoc cho de tinh toan */
+}
+
+body{
+    font-size: 1.6rem;
+}
