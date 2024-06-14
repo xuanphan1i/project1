@@ -10,4 +10,90 @@ html{
 
 body{
     font-size: 1.6rem;
+    font-family: Poppins ;
+}
+/* -------------common- chung */
+
+a{
+    text-decoration: none;
+}
+ul{
+   list-style: none;
+}
+.btn{
+    display: inline-block;
+    padding: 0px 16px;
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 50px;
+    line-height: 28px;
+    text-align: center;
+    color: #FFFFFF;
+    background: #171100;
+    border-radius: 24.5px;
+
+
+}
+
+.main-content{
+    width: 1170px;
+    max-width: calc(100% - 48px);   /* giups cho khi co dãn màn h thì ptu ko bị ép vao lề, 2 ben le van con khoan cach */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.nav a{
+    color: #5F5B53;
+    padding:  8px 21px;      /*  */     /* dc cho trc mawc ddinh */
+   font-size: 1.8rem;
+   position: relative;
+}
+.nav li.active a,  /* viet nhu nay no se ap dung cho ca 2 ddtg -> giup chu home luon den */
+.nav a:hover{
+    color: #171100;
+    text-shadow: 1px 0 0 currentColor; /* mauf hien tai */
+}
+
+
+.nav li.active a::after{
+    position: absolute;
+    left: 21px;
+    bottom: 6px;
+    display: block;
+    content: " ";
+    width: 12px;
+    height: 2px;
+    border-radius: 1px;
+    background-color: #171100;
+}
+
+
+/* ---------------------header */
+.header{
+    background-color: rgb(233, 211, 182);
+}
+.header.fixed{
+    position: sticky;
+    top: -26px;
+}
+.header .body-header{
+    display: flex;
+    /* viet tawt la df tab */
+    align-items: center;
+    padding: 36px 0 8px;
+}
+.main-content .body-header{
+    width: 100%;
+}
+
+nav{
+    margin-left: auto;    /* viet tawt la mla tab */
+}
+
+.nav ul{   
+    display: flex;
+
+}
+.btn-sign-up{
+    margin-left: 49px;
 }
