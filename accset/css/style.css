@@ -1,6 +1,12 @@
 *{
    box-sizing: border-box; 
 }
+/* bộ chọn root */
+:root{
+    --font-heading: "Sen", sans-serif;
+    --btn-color: #ffb900;
+}
+
 
 html{
     font-size: 52.6%;
@@ -20,19 +26,33 @@ a{
 ul{
    list-style: none;
 }
+.h2-heading{
+    font-family: var(--font-heading);
+font-size: 38px;
+font-weight: 700;
+letter-spacing: -0.02em;
+text-align: left;
+color: rgba(23, 17, 0, 1);
+
+}
+
 .btn{
     display: inline-block;
     padding: 0px 16px;
-    font-size: 1.6rem;
+    font-size: 1.9rem;
     font-weight: 600;
     line-height: 50px;
     line-height: 28px;
     text-align: center;
     color: #FFFFFF;
+    
     background: #171100;
-    border-radius: 24.5px;
+    border-radius: 999px;
 
 
+}
+.btn:hover{
+    opacity: 0.7;
 }
 
 .main-content{
@@ -45,7 +65,7 @@ ul{
 .nav a{
     color: #5F5B53;
     padding:  8px 21px;      /*  */     /* dc cho trc mawc ddinh */
-   font-size: 1.8rem;
+   font-size: 2.5rem;
    position: relative;
 }
 .nav li.active a,  /* viet nhu nay no se ap dung cho ca 2 ddtg -> giup chu home luon den */
@@ -53,6 +73,19 @@ ul{
     color: #171100;
     text-shadow: 1px 0 0 currentColor; /* mauf hien tai */
 }
+/* thêm  chưa xong */
+.nav a:hover::after{
+    position: absolute;
+    left: 21px;
+    bottom: 6px;
+    display: block;
+    content: " ";
+    width: 12px;
+    height: 2px;
+    border-radius: 1px;
+    background-color: #171100;
+}
+
 
 
 .nav li.active a::after{
@@ -70,8 +103,16 @@ ul{
 
 /* ---------------------header */
 .header{
-    background-color: rgb(233, 211, 182);
+    background: rgba(255, 252, 244, 1);
+
 }
+
+.header{
+    position: sticky;
+    top: -26px;
+    z-index: 1;
+}
+
 .header.fixed{
     position: sticky;
     top: -26px;
@@ -96,4 +137,348 @@ nav{
 }
 .btn-sign-up{
     margin-left: 49px;
+    line-height: 45px;
+    padding: 0 30px;
+}
+/* ---------------------------HERO */
+.hero{
+    padding: 56px;
+    background: rgba(255, 252, 244, 1);
+
+    
+}
+.hero .heading{
+    background: linear-gradient(90deg, #00ffff, #ff00c3)
+    ;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hero .body{
+    display: flex;
+}
+/* ===============hero left  */
+.hero .media-block{
+    width: 48%;
+    position: relative; /* bo */
+}
+.hero .content-block{
+    width: 52%;
+}
+/* chỉnh cố định kích thước ảnh */
+
+.hero .media-block>img{
+    width: 470px;
+    height: 685px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+/* các chọn đg linl dài : shift+alt+ mũi tên trỏ phải
+nhớ bôi đen đến chứ https:// */
+
+
+/* cho hero-summary bám vào ảnh */
+
+
+.hero .hero-summary{
+    position: absolute;
+    bottom: 48px;
+    right: 0;
+    border-radius: 12px;
+    background: #FFFFFF;
+    box-shadow: 0px 16px 32px 0px rgba(0,0,0,0.05);
+    width: 270px;
+    padding: 24px;
+
+}
+.hero-summary .item{
+    display: flex;
+    align-items: center;
+}
+.hero-summary .item+ .item{
+    margin-top: 22px;
+}
+.hero-summary .intro{
+    margin-left: 16px;
+}
+
+.hero-summary .icon{
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    /* cawn giua */
+    justify-content: center;
+    align-items: center;
+    background-color: #FFF9E8;
+}
+.hero-summary .icon2{
+    background-color: #fcefff;
+    
+}
+.hero-summary .icon3{
+    background-color: #ebeaff;
+    
+}
+.hero-summary .intro .label{
+    font-family: Poppins;
+font-size: 14px;
+font-weight: 400;
+line-height: 26px;
+text-align: left;
+color: rgba(95, 91, 83, 1);
+
+}
+.hero-summary .intro .title{
+    font-family: Poppins;
+font-size: 18px;
+font-weight: 600;
+line-height: 30px;
+text-align: left;
+color:  rgba(23, 17, 0, 1);
+
+}
+/* ====================================hero left  */
+
+.hero .content-block{
+    width: 52%;
+    padding-left: 130px;
+    padding-top: 64px;
+}
+
+.content-block .heading{
+    font-family: var(--font-heading);
+font-size: 5.8rem;
+font-weight: 700;
+line-height: 68px;
+letter-spacing: -0.02em;
+text-align: left;
+line-height: 1.17;
+}
+.hero .desc{
+    margin-top: 22px;
+font-size: 18px;
+line-height: 1.67;
+color: rgba(95, 91, 83, 1);
+
+}
+.hero .cta-group{
+    margin-top: 38px;
+    align-items: center;
+
+}
+.hero .btn-cta{
+    min-width: 150px;
+    background-color: var(--btn-color);
+    line-height: 54px;
+    
+}
+.hero .watch-vide{
+    border: none;
+    background-color: transparent;
+    margin-left: 28px;
+    justify-content: center;
+    align-items: center;
+}
+.hero .cta-group{
+    display: flex;
+
+}
+.hero .watch-vide{
+    display: flex;
+    cursor: pointer;
+}
+
+.hero .watch-vide>.icon{
+    margin-right: 8px;
+}
+.hero .watch-vide>.icon img{
+    margin-top: 15px;
+
+}
+
+.hero .watch-vide>.icon span{
+    /* font-family: Poppins; */
+    /* display: inline block; */
+font-size: 18px;
+font-weight: 600;
+line-height: 30px;
+text-align: left;
+color: #ffb900;
+
+}
+
+.hero .dec50k{
+    margin-top: 10px;
+}
+
+.hero .dec50k :nth-child(2){
+   margin-left: 28px;
+}
+.hero .dec50k strong{
+    font-family: var(--font-heading);
+font-size: 44px;
+font-weight: 700;
+line-height: 54px;
+text-align: left;
+margin-right: 5px;
+
+}
+
+/* ====================popular=================== */
+
+.popular{
+    background: #ffffff;
+  padding: 65px 0;
+  margin-top: 135px;
+
+}
+/* --------top-------------------- */
+
+.popular .h2-pp{
+    margin-bottom: 16px;
+}
+.popular .popular-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.popular .popular-top .desc{
+    width: 458px;
+    font-family: var(--font-heading);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: left;
+    color:  rgba(95, 91, 83, 1);
+
+}
+.popular .popular-top .btn-pp{
+    background: transparent;
+    border-radius: 50%;
+}
+.pp-icon{
+    width: 98px;
+height: 40px;
+top: 1142px;
+left: 1207px;
+gap: 0px;
+opacity: 0px;
+color: rgba(255, 185, 0, 1);
+display: flex;
+gap: 18px;  /*khoang cach giua 2 nut*/
+
+}
+.pp-icon .btn-pp{
+    width: 40px;
+height: 40px;
+top: 1142px;
+left: 1247px;
+gap: 0px;
+border: 1px 0px 0px 0px;
+opacity: 0px;
+border: 1px solid var(--btn-color);
+
+display: flex;
+justify-content: center;
+align-items: center;
+color: var(--btn-color);
+}
+.popular .pp-icon .btn-pp:hover{
+    background-color: var(--btn-color);
+    color: #FFFFFF;
+    cursor: pointer;
+
+}
+
+/* --------------------buttom--------------------------- */
+.popular-buttom-list{
+    display: flex;
+    padding: 20px 0px;
+    margin-top: 55px;
+    gap: 30px;
+}
+.pp-item{
+border-radius: 12px;
+border: 1px solid #e2dfda;
+background-color: #ffffff;
+}
+
+.popular-buttom-list .pp-item:hover{
+   border-radius: 12px;
+   background: 1px solid transparent ;
+    box-shadow: 0px 16px 32px 0px rgba(0,0,0,0.1);
+}
+
+.popular-buttom-list .pp-item .thumb{
+width: 100%;
+border-radius: 12px, 12px, 0px, 0px;
+height: 278px;
+object-fit: cover;
+
+}
+/* info */
+.popular-buttom-list .info{
+    padding: 16px 22px 22px 22px;
+}
+
+.popular-buttom-list .head{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.popular-buttom-list .title{
+font-size: 18px;
+font-weight: 600;
+line-height: 30px;
+text-align: left;
+color: rgba(23, 17, 0, 1);
+
+
+}
+
+.popular-buttom-list .rating{
+    display: flex;
+    align-items: center;
+}
+
+.popular-buttom-list .star{
+    margin-right: 8px;
+}
+.popular-buttom-list .value{
+    color: var(--btn-color);
+}
+.popular-buttom-list .desc{
+font-size: 14px;
+font-weight: 400;
+line-height: 26px;
+text-align: left;
+color: rgba(95, 91, 83, 1);
+margin-top: 8px;
+}
+
+.popular-buttom-list .foot{
+    display: flex;
+    align-items: center;
+margin-top: 12px;
+    justify-content: space-between;
+}
+
+.popular-buttom-list .foot .price{
+    font-family: Poppins;
+font-size: 18px;
+font-weight: 600;
+line-height: 30px;
+text-align: left;
+
+}
+.popular-buttom-list .foot .btn{
+    padding: 5px 20px;
+}
+
+.popular-buttom-list .foot .btn:hover{
+    background-color: var(--btn-color);
+    color: #FFFFFF;
+    cursor: pointer;
 }
