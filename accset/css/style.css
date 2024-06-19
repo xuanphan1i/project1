@@ -18,7 +18,7 @@ body{
     font-size: 1.6rem;
     font-family: Poppins ;
 }
-/* -------------common- chung */
+/*=======================---common- chung ==================================*/
 
 a{
     text-decoration: none;
@@ -100,8 +100,28 @@ color: rgba(23, 17, 0, 1);
     background-color: #171100;
 }
 
+/* --======line-clamp=== */
+.line-clamp{
+    display: -webkit-box;
+    -webkit-line-clamp: var(--line-clamp,1); 
+    /* --> quá 1 dòng sẽ hiển thị dấu 3 chấm */
+    -webkit-box-orient: vertical;
+    overflow: hidden;  /* ẩn noi dung thừa di */
+    /* text-overflow: ellipsis;
+    display: -webkit-box; */
+}
+/* neu muon 2 dong mới xuống dòng  */
+.line-clamp.line-2{
+    --line-clamp: 2;
+}
 
-/* ---------------------header */
+/* bo đi dáu cách hoặc liền quá để xuống dong */
+/* word-break: break-all */
+.break-all{
+    word-break: break-all;
+}
+
+/* ---------------===================-header =========================*/
 .header{
     background: rgba(255, 252, 244, 1);
 
@@ -239,7 +259,7 @@ text-align: left;
 color:  rgba(23, 17, 0, 1);
 
 }
-/* ====================================hero left  */
+/* ====================================hero left =========================== */
 
 .hero .content-block{
     width: 52%;
@@ -334,7 +354,7 @@ margin-right: 5px;
   margin-top: 135px;
 
 }
-/* --------top-------------------- */
+/* --------top---------------------------------------- */
 
 .popular .h2-pp{
     margin-bottom: 16px;
@@ -482,3 +502,14 @@ text-align: left;
     color: #FFFFFF;
     cursor: pointer;
 }
+/* ===========================testmol===================================== */
+.testmol{
+  
+}
+.testmol .main-content{
+  
+}
+
+/* --per */
+
+/* test-comment */
