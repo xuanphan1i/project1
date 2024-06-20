@@ -502,14 +502,116 @@ text-align: left;
     color: #FFFFFF;
     cursor: pointer;
 }
-/* ===========================testmol===================================== */
-.testmol{
-  
+/* ===========================FEEDBACK===================================== */
+.feedback{
+    margin-top: 135px;
+    background: #2E2100;
+    padding: 96px 0;
 }
-.testmol .main-content{
+.feedback-item{
+    display: flex;
+
+
+}
+.feedback .feedback-item .info-fb{
   
+    width: 159px;
+height: 188px;
+
+
 }
 
-/* --per */
+.feedback .feedback-item .avatar{
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    object-fit: cover;
+   
+}
 
-/* test-comment */
+.feedback .feedback-item .name-fb{
+    margin-top: 18px;
+    font-family: Sen;
+font-size: 24px;
+font-weight: 700;
+line-height: 34px;
+text-align: left;
+color: #F7F7F7;
+
+
+}
+.feedback .feedback-item .info-fb .desc-fb{
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 26px;
+    text-align: left;
+    color: #BFBCB2;
+    margin-top: 10px;
+    margin-bottom: 20px;
+
+}
+
+/* phair */
+.conten-fb{
+    width: 770px;
+height: 188px;
+/* margin-left: 250px; */
+margin-bottom: 18px;
+
+}
+.feedback .feedback-item .conten-fb{
+    width: 66%;
+    margin-left: auto;
+}
+
+.feedback .feedback-item .conten-fb .block-quote{
+font-size: 26px;
+font-style: italic;
+font-weight: 200;
+line-height: 4rem;
+text-align: left;
+color: #FFFFFF;
+width: 740px;
+height: 160px;
+
+margin-left: 30px;
+
+}
+.feedback .feedback-item .dots{
+    width: 30px;
+height: 6px;
+top: 2223px;
+left: 135px;
+gap: 0px;
+opacity: 0px;
+cursor: pointer; /* hiện bàn tay */
+
+}
+/* nháp */
+
+.dots2{
+    margin-top: 50px;
+    display: flex;
+    gap: 6px;
+}
+.dot2{
+    width: 6px;
+height: 6px;
+top: 2223px;
+left: 159px;
+gap: 0px;
+background: #634700;
+border-radius: 50%;
+padding: 3.5px;
+cursor: pointer; /* hiện bàn tay */
+
+}
+/* active */
+.feedback .feedback-item .dot2.active{
+    background: var(--btn-color);
+    cursor: default; 
+    /* de nhung cai hien mau vang r thi khong có bàn tay nữa*/
+}
+/* ================================= */
+/*  margin-top: 135px; */
