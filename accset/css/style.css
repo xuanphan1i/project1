@@ -419,6 +419,13 @@ color: var(--btn-color);
     margin-top: 55px;
     gap: 30px;
 }
+.popular-buttom-list:hover .pp-item:not(:hover){
+    opacity: .7;
+    transform: scale(.95);
+    transition: all 0.3s ease;
+ 
+ }
+
 .pp-item{
 border-radius: 12px;
 border: 1px solid #e2dfda;
@@ -494,7 +501,7 @@ text-align: left;
 
 }
 .popular-buttom-list .foot .btn{
-    padding: 5px 20px;
+    padding: 10px 20px;
 }
 
 .popular-buttom-list .foot .btn:hover{
@@ -508,15 +515,20 @@ text-align: left;
     background: #2E2100;
     padding: 96px 0;
 }
+.feedback-list{
+    display: flex;
+    overflow: hidden;  /* ẩn đi */
+    width: 1170px;
+}
 .feedback-item{
     display: flex;
-
+    flex-shrink: 0;   /*co dãn =0*/
 
 }
 .feedback .feedback-item .info-fb{
   
     width: 159px;
-height: 188px;
+   height: 188px;
 
 
 }
@@ -555,14 +567,15 @@ color: #F7F7F7;
 /* phair */
 .conten-fb{
     width: 770px;
-height: 188px;
-/* margin-left: 250px; */
-margin-bottom: 18px;
+    height: 188px;
+margin-left: 250px;
+    margin-bottom: 18px;
 
-}
-.feedback .feedback-item .conten-fb{
-    width: 66%;
-    margin-left: auto;
+   
+top: 2041px;
+left: 535px;
+
+
 }
 
 .feedback .feedback-item .conten-fb .block-quote{
@@ -591,9 +604,10 @@ cursor: pointer; /* hiện bàn tay */
 /* nháp */
 
 .dots2{
-    margin-top: 50px;
+    margin-top: 0px;
     display: flex;
     gap: 6px;
+margin-left: 70px;
 }
 .dot2{
     width: 6px;
@@ -613,5 +627,296 @@ cursor: pointer; /* hiện bàn tay */
     cursor: default; 
     /* de nhung cai hien mau vang r thi khong có bàn tay nữa*/
 }
-/* ================================= */
-/*  margin-top: 135px; */
+
+
+/* ********** ĐẶC BIỆT TẠO HIỆU ỨNG TRƯỢT ============================================= */
+
+
+
+/* ===========================feature  đặc biệt  ================== */
+.feature{
+    margin-top: 135px;
+    padding: 65px 0;
+}
+
+.body-fetu{
+    display: flex;
+}
+
+/* trai*/
+.images{
+    display: flex;
+    width: 570px;
+    border-radius: 16px 0px 0px 0px;
+    margin-right: 130px;
+}
+.feature .body-fetu .images .anh1-a{
+    width: 270px;
+    height: 404px;
+    margin-right: 30px;
+    border-radius: 16px 0px 0px 0px;
+    margin-top: 34px;
+
+}
+.feature .body-fetu .images .anh2-a{
+margin-bottom: 33px;
+}
+
+
+/* phải */
+.content-fetu{
+    margin: 58px 0;
+}
+
+.content-fetu .d1{
+    width: 458px;
+height: 84px;
+
+font-size: 16px;
+font-weight: 400;
+line-height: 28px;
+text-align: left;
+color: #5F5B53;
+margin-top: 30px;
+
+
+
+
+
+
+}
+.content-fetu .d2{
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: left;
+    color: #5F5B53;
+    margin-top: 15px;
+    margin-bottom: 40px;
+
+}
+
+.content-fetu .b2{
+    min-width: 137px;
+   min-height: 50px;
+    text-align: center;
+    padding: 0;
+    padding-top: 10px;
+background: var(--btn-color);
+
+
+
+
+}
+    /* ===================CTA============================= */
+.CTA{
+    margin-top: 135px;
+    padding: 65px 0;
+}
+.body-cta{
+    display: flex;
+}
+/* trái  */
+.cta-conten{
+    width: 570px;
+    border-radius: 16px 0px 0px 0px;
+    margin-right: 130px;
+
+}
+
+.b2-cta{
+    margin-top: 50px;
+    
+}
+
+/* phải */
+/* thừa hưởng feature */
+
+/* ================blog=============================================== */
+.BLOG{
+    background: #FFFCF4;
+
+}
+/* top */
+.blog-top .blog-text{
+    width: 448px;
+    height: 120px;
+    align-items: center;
+    margin: 0 30%;
+
+
+
+}
+.h2-blog{
+    text-align: center;
+}
+
+.BLOG .blog-text .desc-blog{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: center;
+    width: 448px;
+    height: 56px;
+
+
+
+
+}
+/* buttom */
+
+.rating .dot2{
+    background: var(--btn-color);
+    margin-right: 5px;
+}
+.BLOG .head-blog{
+    justify-content: left; 
+}
+.BLOG .head-blog .desc{
+    margin-top: 0;
+}
+.hr-bl{
+  width: 160px;
+height: 1px;
+background: #E2DFDA;
+margin-left: 0;
+
+border-radius: 0.5px 0px 0px 0px;
+
+
+}
+.BLOG .bt-bl{
+    margin-top: 40px;
+}
+.BLOG .dots-blog{
+    justify-content: center;
+    margin-top: 70px;
+}
+
+.BLOG .dots-blog .dot-bl{
+    background: var(--btn-color);
+}
+
+
+/* ========================FOOTER============================ */
+footer{
+    color: #FFFFFF;
+    ;
+    background: #2E2100;
+    margin-top: 135px;
+    padding: 65px 0;
+}
+/* .body-footer{
+} */
+.top-fter{
+    display: flex;
+    margin-bottom: 30px;
+}
+
+/* trai */
+.body-footer .top-fter .lesson{
+    width: 267px;
+height: 163px;
+margin-right: 140px;
+margin-bottom: 50px;
+
+
+}
+.body-footer .lesson .desc{
+    width: 267px;
+height: 78px;
+font-size: 17.5px;
+font-weight: 400;
+line-height: 26px;
+text-align: left;
+margin-top: 20px;
+margin-bottom: 16px;
+
+}
+.body-footer .lesson .socil{
+    width: 111px;
+    height: 15px;
+    color:  #FFFFFF;
+   
+
+}
+.body-footer .lesson .socil img{
+   margin-left: 10px;
+   cursor: pointer;
+}
+
+
+/* phải */
+.body-footer .reight-ft{
+    display: flex;
+}
+.body-footer .reight-ft .to a{
+    color: #FFFFFF;
+}
+
+
+.body-footer .reight-ft .to{
+    margin-right: 140px;
+    width: 130px;
+height: 211px;
+
+
+}
+.body-footer .reight-ft .to .a-comp{
+    width: 82px;
+    height: 28px;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 28px;
+    text-align: left;
+}
+.body-footer .reight-ft .to .desc{
+font-size: 14px;
+font-weight: 400;
+line-height: 26px;
+text-align: left;
+color: #BFBCB2;
+display: block;
+margin: 10px 0;
+}
+.body-footer .reight-ft .to hr{
+    width: 130px;
+height: 1px;
+background: #59554B;
+margin-bottom: 35px;
+margin-top: 15px;
+
+}
+/* adđ */
+.body-footer .reight-ft .add .add-1{
+    width: 231px;
+    height: 199px;
+   
+    
+}
+.body-footer .reight-ft .to .add-1{
+    display: flex;
+    width: 231px;
+height: 52px;
+}
+.body-footer .reight-ft .to .add-1 .cont-add{
+font-size: 14px;
+font-weight: 400;
+line-height: 26px;
+text-align: left;
+color: #BFBCB2;
+margin-left: 10px;
+margin-top: -6px;
+
+}
+.body-footer .reight-ft .to .add-1  .ad-res{
+    font-weight: 700;
+}
+.body-footer .cuoi{
+    color: #FFFFFF;
+    display: block;
+    text-align: center;
+    margin-top: 40px;
+}
