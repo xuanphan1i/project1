@@ -149,9 +149,9 @@
   .conten-fb {
     width: 300px;
     height: 188px;
-    margin-left: 0px;
     margin-bottom: 18px;
     margin-top: 30px;
+    margin-left: 70px;
   }
   .feedback-item {
     /* flex-direction: column; */
@@ -175,7 +175,8 @@
   }
   .images {
     order: 2;
-    margin: 0 0px 0 50px;
+    margin: 20px 0px 0 10%;
+    width: 90%;
   }
   .content-fetu {
     margin: 30px 0;
@@ -198,28 +199,107 @@
   .body-cta {
     flex-direction: column;
   }
-  .images-cta{
+  .images-cta {
     margin: 20px auto;
   }
+  .cta-conten {
+    width: 90%;
+  }
   /* ------------footer===================== */
-  .top-fter{
+  .top-fter {
     flex-direction: column;
   }
-  .body-footer .lesson .desc{
+  .body-footer .lesson .desc {
     width: 500px;
   }
-  .socil{
+  .socil {
     margin: 0 auto;
   }
-  .body-footer .reight-ft{
-   display: grid;
-   grid-template-columns: repeat(2, 1fr);
-   row-gap: 30px;
+  .body-footer .reight-ft {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 30px;
+  }
+  .sing-up{
+    display: none;
   }
 }
 /* tablet- máy tính bảng */
 @media (min-with: 768px) and (max-width: 991.98px) {
+ 
 }
 /* mobile- thiết bị di động */
 @media (max-width: 767.98px) {
+  .header {
+    padding: 20px 0 40px 0;
+  }
+  .action {
+    display: none;
+  }
+  .menu--drawer {
+    inset: 0 20% 0 0;
+  }
+  .gach-ngang {
+    margin-top: 20px;
+    border-top: 1px solid #757575;
+  }
+  .sing-up {
+    color: aliceblue;
+    padding: 8px 21px;
+    font-size: 2.5rem;
+    display: block;
+    margin-top: 10px;
+  }
+  .sing-up:hover {
+    background-color: rgba(233, 165, 127, 0.5);
+  }
+  .hero .media-block > img {
+    width: 240px;
+    height: 345px;
+    object-fit: fill;
+  }
+  .hero .hero-summary {
+    position: static;
+    margin-top: 30px;
+  }
+  .content-block .heading,
+  .h2-heading {
+    font-size: 5vh;
+  }
+  .hero .desc,
+  .popular .popular-top .desc {
+    font-size: 2.5vh;
+  }
+  .feedback {
+    margin-top: 50px;
+  }
+  .feedback-item {
+    flex-direction: column;
+  }
+  .conten-fb {
+    margin-left: 0px;
+    margin-bottom: 18px;
+    margin-top: 30px;
+  }
+  .block-quote{
+    margin-left: 0px;
+     max-width: 260px;
+  }
+  .anh2-a{
+    display: none;
+  }
+  .anh1-a{
+    width: 100%;
+  }
+  .CTA {
+    margin-top: 10px;
+}
+.body-footer .top-fter .lesson {
+  width: 267px;
+  height: 163px;
+  margin-bottom: 50px;
+}
+.body-footer .lesson .desc {
+  width: 350px;
+}
 }
