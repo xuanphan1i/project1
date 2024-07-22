@@ -1,0 +1,225 @@
+/*  1:pc
+    @media (min-with: 992px) {} 
+    2:  chung cho tablet & mobile- máy tính bảng và thiết bị di động 
+    @media (max-width: 991.98px) {}
+    3: tablet -máy tính bảng
+    (min-width: 768px) and (max-width: 991.98px)
+    4: mobile- thiết bị di động
+    @media (max-width: 767.98px)
+
+*/
+/* pc */
+@media (min-width: 992px) {
+  .tablet_mobile {
+    display: none;
+  }
+}
+/* chung cho tablet & mobile- máy tính bảng và thiết bị di động */
+@media (max-width: 991.98px) {
+  /* 1:========================== header=============== */
+  /* a) ẩn và sắp  xếp */
+  .nav {
+    display: none;
+  }
+  .body-header {
+    position: relative;
+  }
+  .logo {
+    position: absolute;
+    left: 50%;
+    translate: -50% -50%;
+  }
+  .tablet-icon__nav {
+    position: absolute;
+    left: 30px;
+    top: 30px;
+    color: rgb(255, 0, 0);
+    width: 24px;
+    z-index: 1;
+    cursor: pointer;
+    position: fixed;
+  }
+  /* b) tạo lớp phủ overlay */
+  .lable--overlay {
+    position: fixed;
+    background: rgba(0, 0, 0, 0.3);
+    inset: 0;
+    z-index: 1; /*inset : đặt khoảng cách đến phần tử cha lúc này cha là body*/
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+  }
+  #checkbox-nav:checked ~ .lable--overlay {
+    opacity: 1;
+    visibility: visible;
+  }
+  /* c) drawer :tạo menu  trong ngăn kéo*/
+  #checkbox-nav:checked ~ .menu--drawer {
+    transform: translateX(0);
+  }
+  .menu--drawer {
+    position: fixed;
+    background-color: #2e1919;
+    inset: 0 40% 0 0;
+    z-index: 2;
+    transform: translateX(-100%);
+    transition: 0.5s;
+    padding: 60px;
+  }
+  .top-drawer {
+    display: flex;
+    justify-content: space-between;
+  }
+  .close--drawer {
+    color: rgb(255, 255, 255);
+    width: 24px;
+  }
+  .lg-drawer {
+    color: aliceblue;
+  }
+  #nav--drawer {
+    margin-top: 30px;
+  }
+  #nav--drawer a {
+    color: aliceblue;
+    padding: 8px 21px;
+    font-size: 2.5rem;
+    display: block;
+    margin-bottom: 20px;
+  }
+  #nav--drawer a:hover {
+    background-color: rgba(173, 255, 47, 0.5);
+  }
+  /* 2:========================== hero=============== */
+  .hero {
+    padding: 30px 0;
+  }
+  .hero .body {
+    flex-direction: column;
+  }
+  .hero .media-block {
+    margin: 0 0 0 40px;
+    width: 90%;
+  }
+  /* heading */
+  .hero .content-block {
+    width: 90%;
+    padding-left: 40px;
+    text-align: center;
+  }
+  .content-block .heading {
+    text-align: center;
+  }
+  .hero .cta-group {
+    justify-content: center;
+  }
+  .hero .desc {
+    padding: 30px 0;
+  }
+
+  /* ==========================.popular================== */
+  .popular {
+    margin-top: 35px;
+  }
+  .popular .popular-top {
+    flex-direction: column;
+  }
+  .pp-text {
+    width: 90%;
+  }
+  .popular .h2-pp {
+    text-align: center;
+  }
+  .popular .popular-top .desc {
+    width: 90%;
+    text-align: center;
+    padding-bottom: 30px;
+  }
+  .popular-buttom-list {
+    flex-direction: column;
+  }
+  /* ---------------feedback---------------- */
+
+  .feedback {
+    padding: 40px 20px;
+  }
+  .feedback-list {
+    width: auto;
+  }
+  .conten-fb {
+    width: 300px;
+    height: 188px;
+    margin-left: 0px;
+    margin-bottom: 18px;
+    margin-top: 30px;
+  }
+  .feedback-item {
+    /* flex-direction: column; */
+  }
+  .open-quotes {
+    width: 18px;
+  }
+  .feedback .feedback-item .conten-fb .block-quote {
+    font-size: 14px;
+    width: 340px;
+    height: 160px;
+  }
+  .i2,
+  .i3,
+  .dots {
+    display: none;
+  }
+  /* ----------.body-fetu--------------- */
+  .body-fetu {
+    flex-direction: column;
+  }
+  .images {
+    order: 2;
+    margin: 0 0px 0 50px;
+  }
+  .content-fetu {
+    margin: 30px 0;
+  }
+  .h2-heading {
+    text-align: center;
+  }
+  .content-fetu .d1,
+  .content-fetu .d2 {
+    width: 100%;
+    text-align: center;
+  }
+  .content-fetu .b2 {
+    margin-left: 40%;
+  }
+  /* -----------------  cta================ */
+  .CTA {
+    margin-top: 50px;
+  }
+  .body-cta {
+    flex-direction: column;
+  }
+  .images-cta{
+    margin: 20px auto;
+  }
+  /* ------------footer===================== */
+  .top-fter{
+    flex-direction: column;
+  }
+  .body-footer .lesson .desc{
+    width: 500px;
+  }
+  .socil{
+    margin: 0 auto;
+  }
+  .body-footer .reight-ft{
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   row-gap: 30px;
+  }
+}
+/* tablet- máy tính bảng */
+@media (min-with: 768px) and (max-width: 991.98px) {
+}
+/* mobile- thiết bị di động */
+@media (max-width: 767.98px) {
+}

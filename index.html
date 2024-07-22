@@ -1,555 +1,764 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document xuan</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>product-1</title>
+    <!-- favicon -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./accset/favicon/apple-touch-icon.png  /apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./accset/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./accset/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./accset/favicon/site.webmanifest" />
     <!-- link reset -->
-    <link rel="stylesheet" href="./accset/css/reset.css">
+    <link rel="stylesheet" href="./accset/css/reset.css" />
     <!-- link style -->
-     <link rel="stylesheet" href="./accset/css/style.css">
-</head>
-<body style="height: 10000px; ">
+    <link rel="stylesheet" href="./accset/css/style.css" />
+    <!-- responsive -->
+    <link rel="stylesheet" href="./accset/css/responsive.css" />
+  </head>
+  <body>
     <!-- HEADER -->
-    <header class="header fixed">  
-        <!-- ta đặt them class fixed dể tý dùng sticky neu menu lại
+    <header class="header fixed" style="background-color: rgb(212, 212, 212);">
+      <!-- ta đặt them class fixed dể tý dùng sticky neu menu lại
           -->
-        <div class="main-content">
-            <!-- tạo main để tái sử dụng lại độ rọng các ptu qua cac phan -->
-            <div class="body-header">
-                <!-- tạo body de lat dung flex -->
-                 <!-- phan 1 logo -->
-                  <img src="./accset/img/Logo.svg" alt="lesson" class="logo">
-                  <!-- nav : trình duyetj hiểu đó là thanh menu or điều hướng của web-->
-                   <nav class="nav">
-                    <ul>
-                        <li class="active">
-                            <a href="#!">Home</a>
-                        </li>
-                        <li>
-                            <a href="#!">Courses</a>
-                        </li>
-                        <li>
-                            <a href="#!">Pricing</a>
-                        </li>
-                        <li>
-                            <a href="#!">Reviews</a>
-                        </li>
-                    </ul>
-                   </nav>
-                   <!-- btn action  nút hành đọng -->
-                    <div class="action">
-                        <a href="#!" class="btn btn-sign-up">Sign Up</a>
-                    </div>
-                                                      <!-- tạo thêm cl btn-sign vì ở đây có nút ấy khác nên cần thêm tên để tý thay đổi nwungx cái khcas nhau của btn -->
-                </div>
+      <div class="main-content">
+        <!-- tạo main để tái sử dụng lại độ rọng các ptu qua cac phan -->
+        <div class="body-header">
+          <!-- tạo body de lat dung flex -->
+          <!-- phan 1 logo -->
+          <a href="">
+            <img src="./accset/img/Logo.svg" alt="lesson" class="logo"
+          /></a>
+          <!-- nav : trình duyetj hiểu đó là thanh menu or điều hướng của web-->
+          <nav class="nav" >
+            <ul id="nav--pc">
+              <li class="active">
+                <a href="#!">Home</a>
+              </li>
+              <li>
+                <a href="#!">Courses</a>
+              </li>
+              <li>
+                <a href="#!">Pricing</a>
+              </li>
+              <li>
+                <a href="#!">Reviews</a>
+              </li>
+            </ul>
+          </nav>
+          <!-- btn action  nút hành đọng -->
+          <div class="action">
+            <a href="#!" class="btn btn-sign-up">Sign Up</a>
+          </div>
+          <!-- tạo thêm cl btn-sign vì ở đây có nút ấy khác nên cần thêm tên để tý thay đổi nwungx cái khcas nhau của btn -->
         </div>
+      </div>
     </header>
-    <!-- phan main -->
-     <main>
-        <!-- pha hero -->
-       <div class="hero">
-        <div class="main-content">
-            <div class="body">
-                <!-- hero left  -->
-                 <div class="media-block">
-                    <img src="./accset/img/hero-img.svg" alt="Learn without limits and spread knowledge." class="img">
-                 <div class="hero-summary">
-                    <!--item so1 -->
-                    <div class="item">
-                        <!-- trai -->
-                        <div class="icon"><img src="./accset/icon/de1.png" alt=""></div>
-                        <!-- phai -->
-                        <div class="intro">
-                            <p class="label">20 Courses</p>
-                            <p class="title">UI/UX Design</p>
-                        </div>
-                    </div>
-
-                    <!--item so2 -->
-                    <div class="item">
-                        <!-- trai -->
-                        <div class="icon icon2"><img src="./accset/icon/Group 17524.png" alt=""></div>
-                        <!-- phai -->
-                        <div class="intro">
-                            <p class="label">20 Courses</p>
-                            <p class="title">Development</p>
-                        </div>
-                    </div>
-
-                    <!--item so3 -->
-                    <div class="item">
-                        <!-- trai -->
-                        <div class="icon icon3"><img src="./accset/icon/mark.png" alt=""></div>
-                        <!-- phai -->
-                        <div class="intro">
-                            <p class="label">30 Courses</p>
-                            <p class="title">Marketing</p>
-                        </div>
-                    </div>
-
-
-                 </div>
-                </div>
-                 <!-- hero right -->
-                  <div class="content-block">
-                    <h1 class="heading">Learn without limits and spread knowledge.</h1>
-                  
-                    <p class="desc">Build new skills for that “this is my year” feeling with courses, certificates, and degrees from world-class universities and companies.</p>
-
-                    <div class="cta-group">
-                        <a href="#!" class="btn btn-cta">See Courses</a>
-                        <button class="watch-vide">
-                            <div class="icon">
-                                <img src="./accset/icon/videopng.png" alt="">
-                            </div>
-
-                            <span>Watch Video</span>
-                        </button>
-                    </div>
-                        <!-- đặt gióng class desc vì nó giống nau nào css cho dễ -->
-                    <p class="desc">Recent engagement</p>
-                    <!-- đối vơi 50k và 70k này ta sẽ code riêng sau vì nó liên quan đến số lượng cạp nhật dùng js -->
-                    <p class="desc dec50k">
-                        <strong>50K</strong> Students
-                        <strong>70+</strong> Courses
-                    </p>
-                </div>
-
-            </div>
+    <!-- code them phần tablet & mobile -->
+    <div class="tablet_mobile">
+      <input type="checkbox" name="checkbox-nav" id="checkbox-nav" hidden />
+      <!-- icon navbar -->
+      <label for="checkbox-nav">
+        <svg
+          class="tablet-icon__nav"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 448 512"
+        >
+          <path
+            fill="currentColor"
+            d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 
+            32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0
+             32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 
+            416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32
+             32-32H416c17.7 0 32 14.3 32 32z"
+          ></path>
+        </svg>
+      </label>
+      <!-- lớp phủ overlay dung lable để for đến checkbox -->
+      <label for="checkbox-nav" class="lable--overlay"></label>
+      <!-- drawer-menu : ngăn kéo  -->
+      <div class="menu--drawer">
+        <!-- top -->
+        <div class="top-drawer">
+          <a href="">
+            <svg
+              class="lg-drawer"
+              width="85"
+              height="34"
+              viewBox="0 0 85 34"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill="currentColor"
+                d="M5.60156 9.29688V22.0703H13.4531V25H2.34375V9.29688H5.60156ZM21.9375 12.8594C23.0938 12.8594 24.0859 13.1094 24.9141 13.6094C25.7578 14.1094 26.3984 14.8047 26.8359 15.6953C27.2891 16.5703 27.5156 17.5859 27.5156 18.7422V20.0078H18.9375C19.0938 20.8047 19.4844 21.4453 20.1094 21.9297C20.7344 22.4141 21.5 22.6562 22.4062 22.6562C23.2656 22.6562 24.0469 22.4844 24.75 22.1406C25.4531 21.7969 26.0156 21.4453 26.4375 21.0859L26.4141 23.8516C26.0391 24.1797 25.4766 24.5156 24.7266 24.8594C23.9922 25.1875 23.1797 25.3516 22.2891 25.3516C21.1172 25.3516 20.0469 25.0859 19.0781 24.5547C18.125 24.0234 17.3594 23.2969 16.7812 22.375C16.2188 21.4531 15.9375 20.3984 15.9375 19.2109C15.9375 18.0547 16.1953 17 16.7109 16.0469C17.2266 15.0938 17.9375 14.3281 18.8438 13.75C19.75 13.1562 20.7812 12.8594 21.9375 12.8594ZM21.8672 15.4609C21.1328 15.4609 20.5156 15.6875 20.0156 16.1406C19.5156 16.5938 19.1719 17.2031 18.9844 17.9688H24.6562C24.5938 17.125 24.2812 16.5 23.7188 16.0938C23.1562 15.6719 22.5391 15.4609 21.8672 15.4609ZM34.0547 12.8594C34.7891 12.8594 35.4688 12.9688 36.0938 13.1875C36.7188 13.4062 37.2031 13.6562 37.5469 13.9375V16.5625C37.1719 16.3125 36.7109 16.0703 36.1641 15.8359C35.6328 15.6016 35.0781 15.4844 34.5 15.4844C33.9375 15.4844 33.4922 15.6094 33.1641 15.8594C32.8359 16.1094 32.6719 16.4062 32.6719 16.75C32.6719 17 32.7656 17.2344 32.9531 17.4531C33.1406 17.6562 33.5 17.8359 34.0312 17.9922L35.3672 18.4375C37.1641 18.9688 38.0625 20.0078 38.0625 21.5547C38.0625 22.2891 37.8516 22.9453 37.4297 23.5234C37.0234 24.0859 36.4688 24.5312 35.7656 24.8594C35.0781 25.1875 34.3125 25.3516 33.4688 25.3516C32.6719 25.3516 31.8984 25.2266 31.1484 24.9766C30.3984 24.7266 29.8281 24.4531 29.4375 24.1562V21.5547C29.7344 21.7578 30.0938 21.9531 30.5156 22.1406C30.9375 22.3281 31.375 22.4844 31.8281 22.6094C32.2812 22.7188 32.6953 22.7734 33.0703 22.7734C33.6641 22.7734 34.1172 22.6719 34.4297 22.4688C34.7578 22.25 34.9219 21.9453 34.9219 21.5547C34.9219 21.2578 34.7891 21.0234 34.5234 20.8516C34.2578 20.6797 33.8672 20.5078 33.3516 20.3359L31.8984 19.8203C30.9922 19.5234 30.3672 19.1016 30.0234 18.5547C29.6797 18.0078 29.5078 17.3594 29.5078 16.6094C29.5078 15.8594 29.6953 15.2109 30.0703 14.6641C30.4609 14.1016 31 13.6641 31.6875 13.3516C32.375 13.0234 33.1641 12.8594 34.0547 12.8594ZM44.4141 12.8594C45.1484 12.8594 45.8281 12.9688 46.4531 13.1875C47.0781 13.4062 47.5625 13.6562 47.9062 13.9375V16.5625C47.5312 16.3125 47.0703 16.0703 46.5234 15.8359C45.9922 15.6016 45.4375 15.4844 44.8594 15.4844C44.2969 15.4844 43.8516 15.6094 43.5234 15.8594C43.1953 16.1094 43.0312 16.4062 43.0312 16.75C43.0312 17 43.125 17.2344 43.3125 17.4531C43.5 17.6562 43.8594 17.8359 44.3906 17.9922L45.7266 18.4375C47.5234 18.9688 48.4219 20.0078 48.4219 21.5547C48.4219 22.2891 48.2109 22.9453 47.7891 23.5234C47.3828 24.0859 46.8281 24.5312 46.125 24.8594C45.4375 25.1875 44.6719 25.3516 43.8281 25.3516C43.0312 25.3516 42.2578 25.2266 41.5078 24.9766C40.7578 24.7266 40.1875 24.4531 39.7969 24.1562V21.5547C40.0938 21.7578 40.4531 21.9531 40.875 22.1406C41.2969 22.3281 41.7344 22.4844 42.1875 22.6094C42.6406 22.7188 43.0547 22.7734 43.4297 22.7734C44.0234 22.7734 44.4766 22.6719 44.7891 22.4688C45.1172 22.25 45.2812 21.9453 45.2812 21.5547C45.2812 21.2578 45.1484 21.0234 44.8828 20.8516C44.6172 20.6797 44.2266 20.5078 43.7109 20.3359L42.2578 19.8203C41.3516 19.5234 40.7266 19.1016 40.3828 18.5547C40.0391 18.0078 39.8672 17.3594 39.8672 16.6094C39.8672 15.8594 40.0547 15.2109 40.4297 14.6641C40.8203 14.1016 41.3594 13.6641 42.0469 13.3516C42.7344 13.0234 43.5234 12.8594 44.4141 12.8594ZM56.4609 12.8594C57.6172 12.8594 58.6719 13.1406 59.625 13.7031C60.5781 14.25 61.3438 15 61.9219 15.9531C62.5156 16.8906 62.8125 17.9453 62.8125 19.1172C62.8125 20.2891 62.5156 21.3438 61.9219 22.2812C61.3438 23.2188 60.5781 23.9688 59.625 24.5312C58.6719 25.0781 57.6172 25.3516 56.4609 25.3516C55.3203 25.3516 54.2656 25.0781 53.2969 24.5312C52.3438 23.9688 51.5781 23.2188 51 22.2812C50.4219 21.3438 50.1328 20.2891 50.1328 19.1172C50.1328 17.9453 50.4219 16.8906 51 15.9531C51.5781 15 52.3438 14.25 53.2969 13.7031C54.2656 13.1406 55.3203 12.8594 56.4609 12.8594ZM56.4609 15.7422C55.8984 15.7422 55.375 15.875 54.8906 16.1406C54.4062 16.4062 54.0156 16.7891 53.7188 17.2891C53.4375 17.7891 53.2969 18.3984 53.2969 19.1172C53.2969 19.8359 53.4375 20.4453 53.7188 20.9453C54.0156 21.4453 54.4062 21.8281 54.8906 22.0938C55.375 22.3438 55.8984 22.4688 56.4609 22.4688C57.0234 22.4688 57.5469 22.3438 58.0312 22.0938C58.5156 21.8281 58.9062 21.4453 59.2031 20.9453C59.5 20.4453 59.6484 19.8359 59.6484 19.1172C59.6484 18.3984 59.5 17.7891 59.2031 17.2891C58.9062 16.7891 58.5156 16.4062 58.0312 16.1406C57.5469 15.875 57.0234 15.7422 56.4609 15.7422ZM68.6016 13.1641V14.8516C68.9609 14.3672 69.4453 13.9141 70.0547 13.4922C70.6797 13.0703 71.3906 12.8594 72.1875 12.8594C73.3906 12.8594 74.3984 13.2656 75.2109 14.0781C76.0234 14.8906 76.4297 16.1094 76.4297 17.7344V25H73.4531L73.4297 18.1328C73.4297 17.3359 73.2344 16.7422 72.8438 16.3516C72.4688 15.9609 71.9453 15.7656 71.2734 15.7656C70.7422 15.7656 70.2422 15.9375 69.7734 16.2812C69.3203 16.625 68.9297 17.0312 68.6016 17.5V25H65.625V13.1641H68.6016Z"
+                fill="#171100"
+              />
+              <path
+                d="M81.2578 21.6719C81.7734 21.6719 82.2109 21.8594 82.5703 22.2344C82.9453 22.5938 83.1328 23.0312 83.1328 23.5469C83.1328 24.0625 82.9453 24.5078 82.5703 24.8828C82.2109 25.2422 81.7734 25.4219 81.2578 25.4219C80.7422 25.4219 80.2969 25.2422 79.9219 24.8828C79.5625 24.5078 79.3828 24.0625 79.3828 23.5469C79.3828 23.0312 79.5625 22.5938 79.9219 22.2344C80.2969 21.8594 80.7422 21.6719 81.2578 21.6719Z"
+                fill="#FFB900"
+              />
+            </svg>
+            /></a
+          >
+          <label for="checkbox-nav">
+            <svg
+              class="close--drawer"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 512 512"
+            >
+              <path
+                fill="currentColor"
+                d="M64 80c-8.8 0-16 7.2-16 16l0 320c0 8.8 7.2 16 16 16l384 0c8.8 0 16-7.2 16-16l0-320c0-8.8-7.2-16-16-16L64 80zM0 96C0 60.7 28.7 32 64 32l384 0c35.3 0 64 28.7 64 64l0 320c0 35.3-28.7 64-64 64L64 480c-35.3 0-64-28.7-64-64L0 96zm175 79c9.4-9.4 24.6-9.4 33.9 0l47 47 47-47c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9l-47 47 47 47c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0l-47-47-47 47c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l47-47-47-47c-9.4-9.4-9.4-24.6 0-33.9z"
+              />
+            </svg>
+          </label>
         </div>
-       </div>
-        <!-- phan popular -->
-        <div class="popular">
-            <div class="main-content">
-                <!-- top -->
-                <div class="popular-top">
-                    <!-- text -->
-                    <div class="pp-text">
-                        <h2 class="h2-heading h2-pp">Our popular courses</h2>
-                        <p class="desc">Build new skills with new trendy courses and shine for the next future career.</p>
-                    </div>
-                    <!-- icon -->
-                    <div class="pp-icon">
-                        <button class="btn-pp">
-                            <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M7 1L1 7L7 13" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>
-                                
-                        </button>
-                        <button class="btn-pp">
-                            <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M1 1L7 7L1 13" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>
-                                
-                        </button>
-                    </div>
+        <!-- nav--drawer -->
+        <ul id="nav--drawer"></ul>
+        <!-- sử dụng javascrips -->
+        <script>
+          const navpc=document.querySelector("#nav--pc");
+          const navmobile=document.querySelector("#nav--drawer");
+          navmobile.innerHTML= navpc.innerHTML;
+        </script>
+      </div>
+    </div>
+    <!-- phan main -->
+    <main>
+      <!-- pha hero -->
+      <div class="hero">
+        <div class="main-content">
+          <div class="body">
+            <!-- hero left  -->
+            <div class="media-block">
+              <img
+                src="./accset/img/hero-img.svg"
+                alt="Learn without limits and spread knowledge."
+                class="img"
+              />
+              <div class="hero-summary">
+                <!--item so1 -->
+                <div class="item">
+                  <!-- trai -->
+                  <div class="icon">
+                    <img src="./accset/icon/de1.png" alt="" />
+                  </div>
+                  <!-- phai -->
+                  <div class="intro">
+                    <p class="label">20 Courses</p>
+                    <p class="title">UI/UX Design</p>
+                  </div>
                 </div>
-                <!-- buttom -->
-                <div class="popular-buttom-list">
-                    <!-- item1 -->
-                     <div class="pp-item">
-                                 <!-- thumb- hinh thu nho -->                   
-                                 <div class="pp-item">
-                                    <a href="#!"><img src="./accset/icon/list1.png" alt="" class="thumb"></a>
-                                   </div>
-                   
-                    <!-- thong tin -info  -->
-                     <div class="info">
-                        <!--  -->
-                        <div class="head">
-                            <h3 
-                             class="title line-clamp break-all">Basic web design Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus magni voluptatibus tempora quae fugit deserunt consequuntur suscipit quaerat mollitia porro.
-                            </h3>
-                            <div class="rating">
-                                <img src="./accset/icon/Star 6.svg" alt="" class="star">
-                                <span class="value">4.5</span>
-                            </div>
-                        </div>
-                        <!-- noi dung -->
-                        <div class="desc line-clamp line-2 break-all">Get the best course, gain knowledge and shine for your future career
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur nam harum nemo voluptatum reiciendis aperiam explicabo recusandae rem pariatur facere?.</div>
-                         <!-- gias -->
-                          <div class="foot">
-                          <span class="price">$120.75</span>
-                            <div class="btn">
-                                Book Now
-                            </div>
-                          </div>
-                     </div>
 
-                     </div>
-                       <!-- item2 -->
-                    <div class="pp-item">
-                        <!-- thumb- hinh thu nho -->
-           <div class="pp-item">
-            <a href="#!"><img src="./accset/icon/list1.png" alt="" class="thumb"></a>
-           </div>
-           <!-- thong tin -info  -->
-            <div class="info">
-               <!--  -->
-               <div class="head">
-                <h3 
-                class="title line-clamp break-all">Basic web design Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus magni voluptatibus tempora quae fugit deserunt consequuntur suscipit quaerat mollitia porro.
-               </h3>
-                   <div class="rating">
-                       <img src="./accset/icon/Star 6.svg" alt="" class="star">
-                       <span class="value">4.5</span>
-                   </div>
-               </div>
-               <!-- noi dung -->
-               <div class="desc line-clamp line-2 break-all">Get the best course, gain knowledge and shine for your future career
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur nam harum nemo voluptatum reiciendis aperiam explicabo recusandae rem pariatur facere?.</div>
-                <!-- gias -->
-                 <div class="foot">
-                 <span class="price">$120.75</span>
-                   <div class="btn">
-                       Book Now
-                   </div>
-                 </div>
-            </div>
-
-                    </div>
-                      <!-- item3 -->
-                      <div class="pp-item">
-                        <!-- thumb- hinh thu nho -->
-           <div class="pp-item">
-            <a href="#!"><img src="./accset/icon/list1.png" alt="" class="thumb"></a>
-           </div>
-           <!-- thong tin -info  -->
-            <div class="info">
-               <!--  -->
-               <div class="head">
-                <h3 
-                class="title line-clamp break-all">Basic web design Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus magni voluptatibus tempora quae fugit deserunt consequuntur suscipit quaerat mollitia porro.
-               </h3>
-                   <div class="rating">
-                       <img src="./accset/icon/Star 6.svg" alt="" class="star">
-                       <span class="value">4.5</span>
-                   </div>
-               </div>
-               <!-- noi dung -->
-                <div class="desc line-clamp line-2 break-all">Get the best course, gain knowledge and shine for your future career
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur nam harum nemo voluptatum reiciendis aperiam explicabo recusandae rem pariatur facere?.</div>
-                <!-- gias -->
-                 <div class="foot">
-                 <span class="price">$120.75</span>
-                   <div class="btn">
-                       Book Now
-                   </div>
-                 </div>
-            </div>
-
-            </div>
+                <!--item so2 -->
+                <div class="item">
+                  <!-- trai -->
+                  <div class="icon icon2">
+                    <img src="./accset/icon/Group 17524.png" alt="" />
+                  </div>
+                  <!-- phai -->
+                  <div class="intro">
+                    <p class="label">20 Courses</p>
+                    <p class="title">Development</p>
+                  </div>
                 </div>
-           
-            </div>
-         </div>
-        <!-- </div>   -->
-        <!-- ddaay -->
-        <!-- feedback -->
-          <div class="feedback">
-            <div class="main-content">
-                <div class="feedback-list">
-                    <!-- 1 item -->
-                     <div class="feedback-item i1">
-                        <!-- khoois trais -->
-                         <div class="info-fb">
-                            <img src="./accset/img/dbboy.svg" alt="" class="avatar">
 
-                            <div class="desc name-fb">Peter Moor</div>
-                            <div class="desc-fb">Student of Web Design</div>
-                            <div class="dots">
-                              <img src="./accset/icon/tronden.svg" alt="" class="dot active">
-                              <img src="./accset/icon/tronvang.svg" alt="" class="dot ">
-                              <img src="./accset/icon/tronden.svg" alt="" class="dot">
-                            </div>
-                            <!-- nháp -->
-                             <div class="dots2">
-                                <span class="dot2"></span>
-                                <span class="dot2"></span>
-                                <span class="dot2 active"></span>
-                             </div>
-                         </div>
-                         <!-- khoi ben phai -->
-                          <div class="conten-fb">
-                            <img src="./accset/img/nhay.svg" alt="" class="open-quotes">
-                            <div class="block-quote">Not only does my resume look impressive—filled with the names and logos of world-class institutions—but these certificates also bring me closer to my career goals by validating the skills I've learned." </div>
-                          </div>
-                     </div>
-                     <!-- item2 -->
-                     <div class="feedback-item i2">
-                        <!-- khoois trais -->
-                         <div class="info-fb">
-                            <img src="./accset/img/ava2.jpg" alt="" class="avatar">
-
-                            <div class="desc name-fb">Peter Moor</div>
-                            <div class="desc-fb">Student of Web Design</div>
-                            <div class="dots">
-                              <img src="./accset/icon/tronden.svg" alt="" class="dot">
-                              <img src="./accset/icon/tronvang.svg" alt="" class="dot active">
-                              <img src="./accset/icon/tronden.svg" alt="" class="dot">
-                            </div>
-                            <!-- nháp -->
-                             <div class="dots2">
-                                <span class="dot2"></span>
-                                <span class="dot2 active"></span>
-                                <span class="dot2"></span>
-                             </div>
-                         </div>
-                         <!-- khoi ben phai -->
-                          <div class="conten-fb">
-                            <img src="./accset/img/nhay.svg" alt="" class="open-quotes">
-                            <div class="block-quote">Not only does my resume look impressive—filled with the names and logos of world-class institutions—but these certificates also bring me closer to my career goals by validating the skills I've learned." </div>
-                          </div>
-                     </div>
-                     <!-- ỉtem3 -->
-                     <div class="feedback-item i3">
-                        <!-- khoois trais -->
-                         <div class="info-fb">
-                            <img src="./accset/img/ava3.jpg" alt="" class="avatar">
-
-                            <div class="desc name-fb">Peter Moor</div>
-                            <div class="desc-fb">Student of Web Design</div>
-                            <div class="dots">
-                              <img src="./accset/icon/tronden.svg" alt="" class="dot">
-                              <img src="./accset/icon/tronvang.svg" alt="" class="dot ">
-                              <img src="./accset/icon/tronden.svg" alt="" class="dot active">
-                            </div>
-                            <!-- nháp -->
-                             <div class="dots2">
-                                <span class="dot2"></span>
-                                <span class="dot2 "></span>
-                                <span class="dot2 active"></span>
-                             </div>
-                         </div>
-                         <!-- khoi ben phai -->
-                          <div class="conten-fb">
-                            <img src="./accset/img/nhay.svg" alt="" class="open-quotes">
-                            <div class="block-quote">Not only does my resume look impressive—filled with the names and logos of world-class institutions—but these certificates also bring me closer to my career goals by validating the skills I've learned." </div>
-                          </div>
-                     </div>
+                <!--item so3 -->
+                <div class="item">
+                  <!-- trai -->
+                  <div class="icon icon3">
+                    <img src="./accset/icon/mark.png" alt="" />
+                  </div>
+                  <!-- phai -->
+                  <div class="intro">
+                    <p class="label">30 Courses</p>
+                    <p class="title">Marketing</p>
+                  </div>
                 </div>
+              </div>
+            </div>
+            <!-- hero right -->
+            <div class="content-block">
+              <h1 class="heading">
+                Learn without limits and spread knowledge.
+              </h1>
+
+              <p class="desc">
+                Build new skills for that “this is my year” feeling with
+                courses, certificates, and degrees from world-class universities
+                and companies.
+              </p>
+
+              <div class="cta-group">
+                <a href="#!" class="btn btn-cta">See Courses</a>
+                <button class="watch-vide">
+                  <div class="icon">
+                    <img src="./accset/icon/videopng.png" alt="" />
+                  </div>
+
+                  <span>Watch Video</span>
+                </button>
+              </div>
+              <!-- đặt gióng class desc vì nó giống nau nào css cho dễ -->
+              <p class="desc">Recent engagement</p>
+              <!-- đối vơi 50k và 70k này ta sẽ code riêng sau vì nó liên quan đến số lượng cạp nhật dùng js -->
+              <p class="desc dec50k">
+                <strong>50K</strong> Students <strong>70+</strong> Courses
+              </p>
             </div>
           </div>
-        <!-- phần feature đặc biệt -->
-           <div class="feature">
-            <div class="main-content">
-                <div class="body-fetu">
-                    <!-- trái -->
-                    <div class="images">
-                        <img src="./accset/img/feature1.png" alt="" class=" a anh1-a">
-                        <img src="./accset/img/feature2.png" alt="" class="a anh2-a">
-                    </div>
-                    <!-- phải -->
-                    <div class="content-fetu">
-                        <h2 class="h2-heading">Learner outcomes through our awesome platform</h2>
-                        <p class="desc d1">87% of people learning for professional development <br>report career benefits like getting a promotion, a raise, or <br>starting a new career.</p>
-                        <p class="desc d2">Lesson Impact Report (2022)</p>
-                        <a href="" class="btn b2">Sign Up</a>
-
-                    </div>
-                </div>
-            </div>
-           </div>
-        <!-- phần CTA -->
-            <div class="CTA">
-                <div class="main-content">
-                    <div class="body-cta">
-                           <!-- trái -->
-                        <div class="content-fetu cta-conten">
-                            <h2 class="h2-heading">Take the next step toward your personal and professional goals with Lesson.</h2>
-                            <p class="desc d1 d1-cta">Take the next step toward. Join now to receive personalized  and more recommendations from the full Coursera catalog.</p>
-                            <a href="" class="btn b2 b2-cta">Join Now</a>
-    
-                        </div>
-                    <!-- phải -->
-                  
-                    <div class="images-cta ">
-                        <img src="./accset/img/cta.png" alt="" class=" a anh1-a">
-                    </div>
-                    </div>
-                </div>
-            </div>
-        <!--BLOG  -->
-          <div class="popular BLOG">
-            <div class="main-content">
-                <!-- top -->
-                <div class="popular-top blog-top">
-                    <!-- text -->
-                    <div class="pp-text blog-text">
-                        <h2 class="h2-heading h2-pp h2-blog">Our blog</h2>
-                        <p class="desc desc-blog">Read our regular travel blog and know the latest update of tour and travel.</p>
-                    </div>
-                   
-                </div>
-                <!-- giữa -->
-                <div class="popular-buttom-list">
-                    <!-- item1 -->
-                     <div class="pp-item">
-                                 <!-- thumb- hinh thu nho -->                   
-                        <!-- <a href="#!"><img src="./accset/icon/list1.png" alt="" class="thumb"></a> -->
-                        <div class="pp-item">
-                            <a href="#!"><img src="./accset/img/blog1.png" alt="" class="thumb"></a>
-                           </div>
-                    <!-- thong tin -info  -->
-                     <div class="info">
-                        <!--  -->
-                        <div class="head head-blog">      
-                            <div class="rating ">
-                                <div class="dot2"></div>
-                                
-                            </div>
-                            <div class="desc line-clamp line-2 break-all">21 November 2021</div>
-                        </div>
-                        <!-- noi dung -->
-                         <hr class="hr-bl">
-                        <h3 
-                             class="title line-clamp break-all">How to become a pro web designer in 2022 and get remot job?
-                            </h3>
-                         <!-- gias -->
-                          <div class="foot bt-bl">
-                            <div class="btn">Read More</div>
-                          </div>
-                     </div>
-
-                     </div>
-                       <!-- item2 -->
-                       <div class="pp-item">
-                        <!-- thumb- hinh thu nho -->                   
-               <!-- <a href="#!"><img src="./accset/icon/list1.png" alt="" class="thumb"></a> -->
-               <div class="pp-item">
-                   <a href="#!"><img src="./accset/img/blog1.png" alt="" class="thumb"></a>
-                  </div>
-           <!-- thong tin -info  -->
-            <div class="info">
-               <!--  -->
-               <div class="head head-blog">      
-                   <div class="rating ">
-                       <div class="dot2"></div>
-                       
-                   </div>
-                   <div class="desc line-clamp line-2 break-all">21 November 2021</div>
-               </div>
-               <!-- noi dung -->
-                <hr class="hr-bl">
-               <h3 
-                    class="title line-clamp break-all">How to become a pro web designer in 2022 and get remot job?
-                   </h3>
-                <!-- gias -->
-                 <div class="foot bt-bl">
-                   <div class="btn">Read More</div>
-                 </div>
-            </div>
-
-                       </div>
-                      <!-- item3 -->
-                      <div class="pp-item">
-                        <!-- thumb- hinh thu nho -->                   
-               <!-- <a href="#!"><img src="./accset/icon/list1.png" alt="" class="thumb"></a> -->
-               <div class="pp-item">
-                   <a href="#!"><img src="./accset/img/blog1.png" alt="" class="thumb"></a>
-                  </div>
-           <!-- thong tin -info  -->
-            <div class="info">
-               <!--  -->
-               <div class="head head-blog">      
-                   <div class="rating ">
-                       <div class="dot2"></div>
-                       
-                   </div>
-                   <div class="desc line-clamp line-2 break-all">21 November 2021</div>
-               </div>
-               <!-- noi dung -->
-                <hr class="hr-bl">
-               <h3 
-                    class="title line-clamp break-all">How to become a pro web designer in 2022 and get remot job?
-                   </h3>
-                <!-- gias -->
-                 <div class="foot bt-bl">
-                   <div class="btn">Read More</div>
-                 </div>
-            </div>
-
-                      </div>
-                </div>
-                <!-- cuối -->
-                <div class="dots2 dots-blog">
-                    <span class="dot2 active dot-bl"></span>
-                    <span class="dot2"></span>
-                    <span class="dot2 "></span>
-                 </div>
-           
-            </div>
-         </div>
-        <!--  -->
-        <!--  -->
-        <!--  -->
-
-     </main>
-     <!-- footer -->
-      <footer>
-        <div class="main-content">
-            <div class="body-footer">
-                <!-- top -->
-                 <div class="top-fter">
-                    <!-- trai -->
-                    <div class="lesson">
-                        <img src="./accset/img/Logo (1).png" alt="./accset/img/Logo.png" class="img-fter">
-                        <div class="desc">Need to help for your dream Career? trust us. With Lesson, study becomes a lot easier with us.</div>
-                        
-                        <div class="socil">
-                            <img src="./accset/img/Twitter.png" alt="Twitter" class="img-socil">
-                            <img src="./accset/img/Facebook.png" alt="Facebook" class="img-socil">
-                            <img src="./accset/img/Linkedin.png" alt="Linkedin" class="img-socil">
-                            <img src="./accset/img/Instagram.png" alt="Instagram" class="img-socil">
-                            
-                        </div>
-                    </div>
-                    <!-- phai -->
-                   <div class="reight-ft">
-                    <div class="to company">
-                        <a href="" class=" a-comp">Company</a>
-                        <hr>
-                        <a href="" class="desc">About Us</a>
-                        <a href="" class="desc">Features</a>
-                        <a href="" class="desc">Our Pricing</a>
-                        <a href="" class="desc">Latest News</a>
-                    </div>
-                    <div class="to support">
-                        <a href="" class="a-comp">Support</a>
-                        <hr>
-                        <a href="" class="desc">FAQ’s</a>
-                        <a href="" class="desc">Terms & Conditions</a>
-                        <a href="" class="desc">Privacy Policy</a>
-                        <a href="" class="desc">Contact Us</a>
-                   
-                    </div>
-                    <div class="to add">
-                        <a href="" class="a-comp">Address</a>
-                        <hr>
-                        <div class="add-1">
-                            <p class="ad-res">Location: </p>
-                            <p class="cont-add">27 Division St, New York, NY 10002, USA</p>
-                        </div>
-                        <div class="add-1">
-                            <p class="ad-res">Email:  </p>
-                            <p class="cont-add">email@gmail.com</p>
-                        </div>
-                        <div class="add-1">
-                            <p class="ad-res">Phone: </p>
-                            <p class="cont-add"> + 000 1234 567 890</p>
-                        </div>
-                   
-                    </div>
-                   </div>
-                 </div>
-                 <!-- hr -->
-                  <hr class="hr-footer">
-                  <!-- buttom -->
-                 <a href="" class="cuoi">Copyright ©2022 webdesign.gdn All rights reserved</a>
-            </div>
         </div>
-      </footer>
-</body>
+      </div>
+      <!-- phan popular -->
+      <div class="popular">
+        <div class="main-content">
+          <!-- top -->
+          <div class="popular-top">
+            <!-- text -->
+            <div class="pp-text">
+              <h2 class="h2-heading h2-pp">Our popular courses</h2>
+              <p class="desc">
+                Build new skills with new trendy courses and shine for the next
+                future career.
+              </p>
+            </div>
+            <!-- icon -->
+            <div class="pp-icon">
+              <button class="btn-pp">
+                <svg
+                  width="8"
+                  height="14"
+                  viewBox="0 0 8 14"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M7 1L1 7L7 13"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </button>
+              <button class="btn-pp">
+                <svg
+                  width="8"
+                  height="14"
+                  viewBox="0 0 8 14"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M1 1L7 7L1 13"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+          <!-- buttom -->
+          <div class="popular-buttom-list">
+            <!-- item1 -->
+            <div class="pp-item">
+              <!-- thumb- hinh thu nho -->
+              <div class="pp-item">
+                <a href="#!"
+                  ><img src="./accset/icon/list1.png" alt="" class="thumb"
+                /></a>
+              </div>
+
+              <!-- thong tin -info  -->
+              <div class="info">
+                <!--  -->
+                <div class="head">
+                  <h3 class="title line-clamp break-all">
+                    Basic web design Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. Doloribus magni voluptatibus tempora quae
+                    fugit deserunt consequuntur suscipit quaerat mollitia porro.
+                  </h3>
+                  <div class="rating">
+                    <img src="./accset/icon/Star 6.svg" alt="" class="star" />
+                    <span class="value">4.5</span>
+                  </div>
+                </div>
+                <!-- noi dung -->
+                <div class="desc line-clamp line-2 break-all">
+                  Get the best course, gain knowledge and shine for your future
+                  career Lorem ipsum dolor sit amet consectetur adipisicing
+                  elit. Tenetur nam harum nemo voluptatum reiciendis aperiam
+                  explicabo recusandae rem pariatur facere?.
+                </div>
+                <!-- gias -->
+                <div class="foot">
+                  <span class="price">$120.75</span>
+                  <div class="btn">Book Now</div>
+                </div>
+              </div>
+            </div>
+            <!-- item2 -->
+            <div class="pp-item">
+              <!-- thumb- hinh thu nho -->
+              <div class="pp-item">
+                <a href="#!"
+                  ><img src="./accset/icon/list1.png" alt="" class="thumb"
+                /></a>
+              </div>
+              <!-- thong tin -info  -->
+              <div class="info">
+                <!--  -->
+                <div class="head">
+                  <h3 class="title line-clamp break-all">
+                    Basic web design Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. Doloribus magni voluptatibus tempora quae
+                    fugit deserunt consequuntur suscipit quaerat mollitia porro.
+                  </h3>
+                  <div class="rating">
+                    <img src="./accset/icon/Star 6.svg" alt="" class="star" />
+                    <span class="value">4.5</span>
+                  </div>
+                </div>
+                <!-- noi dung -->
+                <div class="desc line-clamp line-2 break-all">
+                  Get the best course, gain knowledge and shine for your future
+                  career Lorem ipsum dolor sit amet consectetur adipisicing
+                  elit. Tenetur nam harum nemo voluptatum reiciendis aperiam
+                  explicabo recusandae rem pariatur facere?.
+                </div>
+                <!-- gias -->
+                <div class="foot">
+                  <span class="price">$120.75</span>
+                  <div class="btn">Book Now</div>
+                </div>
+              </div>
+            </div>
+            <!-- item3 -->
+            <div class="pp-item">
+              <!-- thumb- hinh thu nho -->
+              <div class="pp-item">
+                <a href="#!"
+                  ><img src="./accset/icon/list1.png" alt="" class="thumb"
+                /></a>
+              </div>
+              <!-- thong tin -info  -->
+              <div class="info">
+                <!--  -->
+                <div class="head">
+                  <h3 class="title line-clamp break-all">
+                    Basic web design Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. Doloribus magni voluptatibus tempora quae
+                    fugit deserunt consequuntur suscipit quaerat mollitia porro.
+                  </h3>
+                  <div class="rating">
+                    <img src="./accset/icon/Star 6.svg" alt="" class="star" />
+                    <span class="value">4.5</span>
+                  </div>
+                </div>
+                <!-- noi dung -->
+                <div class="desc line-clamp line-2 break-all">
+                  Get the best course, gain knowledge and shine for your future
+                  career Lorem ipsum dolor sit amet consectetur adipisicing
+                  elit. Tenetur nam harum nemo voluptatum reiciendis aperiam
+                  explicabo recusandae rem pariatur facere?.
+                </div>
+                <!-- gias -->
+                <div class="foot">
+                  <span class="price">$120.75</span>
+                  <div class="btn">Book Now</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- </div>   -->
+      <!-- ddaay -->
+      <!-- feedback -->
+      <div class="feedback">
+        <div class="main-content">
+          <div class="feedback-list">
+            <!-- 1 item -->
+            <div class="feedback-item i1">
+              <!-- khoois trais -->
+              <div class="info-fb">
+                <img src="./accset/img/dbboy.svg" alt="" class="avatar" />
+
+                <div class="desc name-fb">Peter Moor</div>
+                <div class="desc-fb">Student of Web Design</div>
+                <div class="dots">
+                  <img
+                    src="./accset/icon/tronden.svg"
+                    alt=""
+                    class="dot active"
+                  />
+                  <img src="./accset/icon/tronvang.svg" alt="" class="dot" />
+                  <img src="./accset/icon/tronden.svg" alt="" class="dot" />
+                </div>
+                <!-- nháp -->
+                <div class="dots2">
+                  <span class="dot2"></span>
+                  <span class="dot2"></span>
+                  <span class="dot2 active"></span>
+                </div>
+              </div>
+              <!-- khoi ben phai -->
+              <div class="conten-fb">
+                <img src="./accset/img/nhay.svg" alt="" class="open-quotes" />
+                <div class="block-quote">
+                  Not only does my resume look impressive—filled with the names
+                  and logos of world-class institutions—but these certificates
+                  also bring me closer to my career goals by validating the
+                  skills I've learned."
+                </div>
+              </div>
+            </div>
+            <!-- item2 -->
+            <div class="feedback-item i2">
+              <!-- khoois trais -->
+              <div class="info-fb">
+                <img src="./accset/img/ava2.jpg" alt="" class="avatar" />
+
+                <div class="desc name-fb">Peter Moor</div>
+                <div class="desc-fb">Student of Web Design</div>
+                <div class="dots">
+                  <img src="./accset/icon/tronden.svg" alt="" class="dot" />
+                  <img
+                    src="./accset/icon/tronvang.svg"
+                    alt=""
+                    class="dot active"
+                  />
+                  <img src="./accset/icon/tronden.svg" alt="" class="dot" />
+                </div>
+                <!-- nháp -->
+                <div class="dots2">
+                  <span class="dot2"></span>
+                  <span class="dot2 active"></span>
+                  <span class="dot2"></span>
+                </div>
+              </div>
+              <!-- khoi ben phai -->
+              <div class="conten-fb">
+                <img src="./accset/img/nhay.svg" alt="" class="open-quotes" />
+                <div class="block-quote">
+                  Not only does my resume look impressive—filled with the names
+                  and logos of world-class institutions—but these certificates
+                  also bring me closer to my career goals by validating the
+                  skills I've learned."
+                </div>
+              </div>
+            </div>
+            <!-- ỉtem3 -->
+            <div class="feedback-item i3">
+              <!-- khoois trais -->
+              <div class="info-fb">
+                <img src="./accset/img/ava3.jpg" alt="" class="avatar" />
+
+                <div class="desc name-fb">Peter Moor</div>
+                <div class="desc-fb">Student of Web Design</div>
+                <div class="dots">
+                  <img src="./accset/icon/tronden.svg" alt="" class="dot" />
+                  <img src="./accset/icon/tronvang.svg" alt="" class="dot" />
+                  <img
+                    src="./accset/icon/tronden.svg"
+                    alt=""
+                    class="dot active"
+                  />
+                </div>
+                <!-- nháp -->
+                <div class="dots2">
+                  <span class="dot2"></span>
+                  <span class="dot2"></span>
+                  <span class="dot2 active"></span>
+                </div>
+              </div>
+              <!-- khoi ben phai -->
+              <div class="conten-fb">
+                <img src="./accset/img/nhay.svg" alt="" class="open-quotes" />
+                <div class="block-quote">
+                  Not only does my resume look impressive—filled with the names
+                  and logos of world-class institutions—but these certificates
+                  also bring me closer to my career goals by validating the
+                  skills I've learned."
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- phần feature đặc biệt -->
+      <div class="feature">
+        <div class="main-content">
+          <div class="body-fetu">
+            <!-- trái -->
+            <div class="images">
+              <img src="./accset/img/feature1.png" alt="" class="a anh1-a" />
+              <img src="./accset/img/feature2.png" alt="" class="a anh2-a" />
+            </div>
+            <!-- phải -->
+            <div class="content-fetu">
+              <h2 class="h2-heading">
+                Learner outcomes through our awesome platform
+              </h2>
+              <p class="desc d1">
+                87% of people learning for professional development <br />report
+                career benefits like getting a promotion, a raise, or
+                <br />starting a new career.
+              </p>
+              <p class="desc d2">Lesson Impact Report (2022)</p>
+              <a href="" class="btn b2">Sign Up</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- phần CTA -->
+      <div class="CTA">
+        <div class="main-content">
+          <div class="body-cta">
+            <!-- trái -->
+            <div class="content-fetu cta-conten">
+              <h2 class="h2-heading">
+                Take the next step toward your personal and professional goals
+                with Lesson.
+              </h2>
+              <p class="desc d1 d1-cta">
+                Take the next step toward. Join now to receive personalized and
+                more recommendations from the full Coursera catalog.
+              </p>
+              <a href="" class="btn b2 b2-cta">Join Now</a>
+            </div>
+            <!-- phải -->
+
+            <div class="images-cta">
+              <img src="./accset/img/cta.png" alt="" class="a anh1-a" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--BLOG  -->
+      <div class="popular BLOG">
+        <div class="main-content">
+          <!-- top -->
+          <div class="popular-top blog-top">
+            <!-- text -->
+            <div class="pp-text blog-text">
+              <h2 class="h2-heading h2-pp h2-blog">Our blog</h2>
+              <p class="desc desc-blog">
+                Read our regular travel blog and know the latest update of tour
+                and travel.
+              </p>
+            </div>
+          </div>
+          <!-- giữa -->
+          <div class="popular-buttom-list">
+            <!-- item1 -->
+            <div class="pp-item">
+              <!-- thumb- hinh thu nho -->
+              <!-- <a href="#!"><img src="./accset/icon/list1.png" alt="" class="thumb"></a> -->
+              <div class="pp-item">
+                <a href="#!"
+                  ><img src="./accset/img/blog1.png" alt="" class="thumb"
+                /></a>
+              </div>
+              <!-- thong tin -info  -->
+              <div class="info">
+                <!--  -->
+                <div class="head head-blog">
+                  <div class="rating">
+                    <div class="dot2"></div>
+                  </div>
+                  <div class="desc line-clamp line-2 break-all">
+                    21 November 2021
+                  </div>
+                </div>
+                <!-- noi dung -->
+                <hr class="hr-bl" />
+                <h3 class="title line-clamp break-all">
+                  How to become a pro web designer in 2022 and get remot job?
+                </h3>
+                <!-- gias -->
+                <div class="foot bt-bl">
+                  <div class="btn">Read More</div>
+                </div>
+              </div>
+            </div>
+            <!-- item2 -->
+            <div class="pp-item">
+              <!-- thumb- hinh thu nho -->
+              <!-- <a href="#!"><img src="./accset/icon/list1.png" alt="" class="thumb"></a> -->
+              <div class="pp-item">
+                <a href="#!"
+                  ><img src="./accset/img/blog1.png" alt="" class="thumb"
+                /></a>
+              </div>
+              <!-- thong tin -info  -->
+              <div class="info">
+                <!--  -->
+                <div class="head head-blog">
+                  <div class="rating">
+                    <div class="dot2"></div>
+                  </div>
+                  <div class="desc line-clamp line-2 break-all">
+                    21 November 2021
+                  </div>
+                </div>
+                <!-- noi dung -->
+                <hr class="hr-bl" />
+                <h3 class="title line-clamp break-all">
+                  How to become a pro web designer in 2022 and get remot job?
+                </h3>
+                <!-- gias -->
+                <div class="foot bt-bl">
+                  <div class="btn">Read More</div>
+                </div>
+              </div>
+            </div>
+            <!-- item3 -->
+            <div class="pp-item">
+              <!-- thumb- hinh thu nho -->
+              <!-- <a href="#!"><img src="./accset/icon/list1.png" alt="" class="thumb"></a> -->
+              <div class="pp-item">
+                <a href="#!"
+                  ><img src="./accset/img/blog1.png" alt="" class="thumb"
+                /></a>
+              </div>
+              <!-- thong tin -info  -->
+              <div class="info">
+                <!--  -->
+                <div class="head head-blog">
+                  <div class="rating">
+                    <div class="dot2"></div>
+                  </div>
+                  <div class="desc line-clamp line-2 break-all">
+                    21 November 2021
+                  </div>
+                </div>
+                <!-- noi dung -->
+                <hr class="hr-bl" />
+                <h3 class="title line-clamp break-all">
+                  How to become a pro web designer in 2022 and get remot job?
+                </h3>
+                <!-- gias -->
+                <div class="foot bt-bl">
+                  <div class="btn">Read More</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- cuối -->
+          <div class="dots2 dots-blog">
+            <span class="dot2 active dot-bl"></span>
+            <span class="dot2"></span>
+            <span class="dot2"></span>
+          </div>
+        </div>
+      </div>
+      <!--  -->
+      <!--  -->
+      <!--  -->
+    </main>
+    <!-- footer -->
+    <footer>
+      <div class="main-content">
+        <div class="body-footer">
+          <!-- top -->
+          <div class="top-fter">
+            <!-- trai -->
+            <div class="lesson">
+              <img
+                src="./accset/img/Logo (1).png"
+                alt="./accset/img/Logo.png"
+                class="img-fter"
+              />
+              <div class="desc">
+                Need to help for your dream Career? trust us. With Lesson, study
+                becomes a lot easier with us.
+              </div>
+
+              <div class="socil">
+                <img
+                  src="./accset/img/Twitter.png"
+                  alt="Twitter"
+                  class="img-socil"
+                />
+                <img
+                  src="./accset/img/Facebook.png"
+                  alt="Facebook"
+                  class="img-socil"
+                />
+                <img
+                  src="./accset/img/Linkedin.png"
+                  alt="Linkedin"
+                  class="img-socil"
+                />
+                <img
+                  src="./accset/img/Instagram.png"
+                  alt="Instagram"
+                  class="img-socil"
+                />
+              </div>
+            </div>
+            <!-- phai -->
+            <div class="reight-ft">
+              <div class="to company">
+                <a href="" class="a-comp">Company</a>
+                <hr />
+                <a href="" class="desc">About Us</a>
+                <a href="" class="desc">Features</a>
+                <a href="" class="desc">Our Pricing</a>
+                <a href="" class="desc">Latest News</a>
+              </div>
+              <div class="to support">
+                <a href="" class="a-comp">Support</a>
+                <hr />
+                <a href="" class="desc">FAQ’s</a>
+                <a href="" class="desc">Terms & Conditions</a>
+                <a href="" class="desc">Privacy Policy</a>
+                <a href="" class="desc">Contact Us</a>
+              </div>
+              <div class="to add">
+                <a href="" class="a-comp">Address</a>
+                <hr />
+                <div class="add-1">
+                  <p class="ad-res">Location:</p>
+                  <p class="cont-add">
+                    27 Division St, New York, NY 10002, USA
+                  </p>
+                </div>
+                <div class="add-1">
+                  <p class="ad-res">Email:</p>
+                  <p class="cont-add">email@gmail.com</p>
+                </div>
+                <div class="add-1">
+                  <p class="ad-res">Phone:</p>
+                  <p class="cont-add">+ 000 1234 567 890</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- hr -->
+          <hr class="hr-footer" />
+          <!-- buttom -->
+          <a href="" class="cuoi"
+            >Copyright ©2022 webdesign.gdn All rights reserved</a
+          >
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>

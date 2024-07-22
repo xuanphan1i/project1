@@ -64,7 +64,8 @@ color: rgba(23, 17, 0, 1);
 
 .nav a{
     color: #5F5B53;
-    padding:  8px 21px;      /*  */     /* dc cho trc mawc ddinh */
+    padding:  8px 21px;  
+        /*  */     /* dc cho trc mawc ddinh */
    font-size: 2.5rem;
    position: relative;
 }
@@ -140,6 +141,7 @@ color: rgba(23, 17, 0, 1);
 .header .body-header{
     display: flex;
     /* viet tawt la df tab */
+    justify-content: space-between;
     align-items: center;
     padding: 36px 0 8px;
 }
@@ -148,7 +150,8 @@ color: rgba(23, 17, 0, 1);
 }
 
 nav{
-    margin-left: auto;    /* viet tawt la mla tab */
+    margin-left: auto;    
+    /* viet tawt la mla tab */
 }
 
 .nav ul{   
@@ -160,7 +163,7 @@ nav{
     line-height: 45px;
     padding: 0 30px;
 }
-/* ---------------------------HERO */
+/* ---------------------------HERO======================== */
 .hero{
     padding: 56px;
     background: rgba(255, 252, 244, 1);
@@ -178,7 +181,7 @@ nav{
 .hero .body{
     display: flex;
 }
-/* ===============hero left  */
+/* ============================hero left  */
 .hero .media-block{
     width: 48%;
     position: relative; /* bo */
